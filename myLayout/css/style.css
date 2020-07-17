@@ -747,7 +747,11 @@ main {
     outline: none;
 }
 .customers_quotes {
-    height: 479px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 479px;
     background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
 }
 .customers_quotes .testimonials {

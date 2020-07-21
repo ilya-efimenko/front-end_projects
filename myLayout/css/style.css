@@ -809,6 +809,16 @@ main {
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #676F95;
+    position: relative;
+}
+.user_feedback:before {
+    content: '';
+    position: absolute;
+    top:86%;
+    left:45%;
+    width: 62px;
+    height: 62.13px;
+    background-image: url(../images/user_feedback.png);
 }
 .user_feedback p {
     width: 283px;
@@ -828,11 +838,38 @@ main {
     letter-spacing: 0.03em;
     color: #8D96BD;
     opacity: .5;
+    /* padding: 40px 0 0 65px; */
+    position: relative;
 }
 
 .user_feedback_shadow p {
     width: 283px;
 }
+.help_for_customers {
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    min-height: 964px;
+    background: #ffffff;
+    padding-top: 146px;
+}
+.help_for_customers .help_for_customers_text {
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: Roboto;
+    color: #3D4F9F;
+}
+.help_for_customers h2 {
+    font-size: 36px;
+    line-height: 45px;
+    font-family: Quicksand;
+    padding-top: 27px;
+    color: #3D4F9F;
+}
+
 @media(max-width:1024px) {
     #burger_container { 
         display:block;
@@ -931,6 +968,7 @@ main {
         flex-direction: column;
         width: 100%;
         height: 70%;
+        padding-bottom: 10%;
     }
     .how_to_start .how_to_start_images {
         flex-direction: column;
@@ -952,7 +990,7 @@ main {
     .customers_quotes { 
         flex-direction: column;
         align-items: center;
-        
+        padding-bottom: 10%;
     }
     .user_feedback {
         margin-top: 5%;

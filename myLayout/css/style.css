@@ -229,7 +229,19 @@ main {
     justify-content: space-around;
     border-bottom: 1px solid #D8E3FE;
 }
-
+.brands .slide {
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out; 
+}
+.brands .slide.firstItem {
+    display: block;
+}
+.brands a {
+    color: #A8B4E5;
+}
+.brands a:hover {
+    color: #5982E7;
+}
 .plan_manage {
     min-height: 766px;
     background: #F5F8FF;
@@ -751,7 +763,8 @@ main {
     justify-content: space-around;
     min-height: 479px;
     background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
-    padding: 146px 0 0 276px;
+    padding-top: 146px;
+    overflow: hidden;
 }
 .customers_quotes_left {
     display:flex;
@@ -804,7 +817,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 211px;
+    width: 423px;
     height: 175.37px;
     background: #ffffff;
     box-sizing: border-box;
@@ -815,7 +828,6 @@ main {
     letter-spacing: 0.03em;
     color: #8D96BD;
     opacity: .5;
-    position: relative;
 }
 
 .user_feedback_shadow p {
@@ -843,6 +855,15 @@ main {
     .brands img {
         padding-top: 10%;
         padding-bottom: 10%;
+    }
+    .brands .img_bitbucket {
+        display: none;
+    }
+    .brands .img_attlasian {
+        display: none;
+    }
+    .brands .img_audi {
+        display: none;
     }
     .device_images {
         display:flex;
@@ -927,5 +948,16 @@ main {
     }
     .how_to_start .how_to_start_text .afterH2_text {
         text-align: center;
+    }
+    .customers_quotes { 
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .user_feedback {
+        margin-top: 5%;
+    }
+    .user_feedback_shadow {
+        display: none;
     }
 }

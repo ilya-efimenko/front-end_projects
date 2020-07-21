@@ -229,7 +229,19 @@ main {
     justify-content: space-around;
     border-bottom: 1px solid #D8E3FE;
 }
-
+.brands .slide {
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out; 
+}
+.brands .slide.firstItem {
+    display: block;
+}
+.brands a {
+    color: #A8B4E5;
+}
+.brands a:hover {
+    color: #5982E7;
+}
 .plan_manage {
     min-height: 766px;
     background: #F5F8FF;
@@ -748,24 +760,78 @@ main {
 }
 .customers_quotes {
     display:flex;
-    align-items: center;
-    flex-direction: column;
     justify-content: space-around;
     min-height: 479px;
     background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+    padding-top: 146px;
+    overflow: hidden;
 }
-.customers_quotes .testimonials {
+.customers_quotes_left {
+    display:flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.customers_quotes_left .testimonials {
     font-family: Roboto;
     font-size: 10px;
     line-height: 12px;
     letter-spacing: 0.1em;
     color: #3D4F9F;
 }
-.customers_quotes h2 {
+.customers_quotes_left h2 {
     font-family: Quicksand;
     font-size: 36px;
     line-height: 45px;
     color: #3D4F9F;
+    padding-top: 30px;
+}
+.customers_quotes_left .customers_quotes_text {
+    width: 323px;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #A4ABC8;
+    padding-top: 15px;
+}
+.user_feedback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 423px;
+    height: 175.37px;
+    background: #FFFFFF;
+    border: 1px solid #D8E3FE;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 50px #F3F5FA;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #676F95;
+}
+.user_feedback p {
+    width: 283px;
+}
+.user_feedback_shadow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 423px;
+    height: 175.37px;
+    background: #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 50px #F3F5FA;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    color: #8D96BD;
+    opacity: .5;
+}
+
+.user_feedback_shadow p {
+    width: 283px;
 }
 @media(max-width:1024px) {
     #burger_container { 
@@ -789,6 +855,15 @@ main {
     .brands img {
         padding-top: 10%;
         padding-bottom: 10%;
+    }
+    .brands .img_bitbucket {
+        display: none;
+    }
+    .brands .img_attlasian {
+        display: none;
+    }
+    .brands .img_audi {
+        display: none;
     }
     .device_images {
         display:flex;
@@ -873,5 +948,16 @@ main {
     }
     .how_to_start .how_to_start_text .afterH2_text {
         text-align: center;
+    }
+    .customers_quotes { 
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .user_feedback {
+        margin-top: 5%;
+    }
+    .user_feedback_shadow {
+        display: none;
     }
 }

@@ -847,7 +847,6 @@ main {
 }
 .help_for_customers {
     display:flex;
-    justify-content: space-around;
     flex-direction: column;
     align-items: center;
     min-height: 964px;
@@ -863,13 +862,67 @@ main {
     color: #3D4F9F;
 }
 .help_for_customers h2 {
-    font-size: 36px;
+    font-size: 24px;
     line-height: 45px;
     font-family: Quicksand;
     padding-top: 27px;
     color: #3D4F9F;
 }
-
+.customers_questions {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+.customers_questions .question_answer {
+    width: 743px;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #D8E3FE;
+}
+.customers_questions .question_answer a {
+    color: #8E96B7;
+    cursor: default;
+}
+.open_text_button.open {
+    width: 195px;
+    height: 43px;
+    margin-top: 30px;
+    background: #E8ECF4;
+    border-radius: 2px;
+    font-family: Quicksand;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7382A3;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.customers_questions .question_answer .question_answer_text {
+    padding-left: 20px;
+    font-family: Quicksand;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #8E96B7;
+    cursor: pointer;
+}
+.customers_questions .question_answer .question_answer_text:hover,
+.customers_questions .question_answer .question_answer_text:focus
+{
+    color: #495274;
+}
+.open_text.open {
+    padding-top: 20px;
+    width: 391px;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    color: #8D96BD;
+}
 @media(max-width:1024px) {
     #burger_container { 
         display:block;
@@ -997,5 +1050,15 @@ main {
     }
     .user_feedback_shadow {
         display: none;
+    }
+    .customers_questions {
+        align-items: center;
+        justify-content: center;
+    }
+    .customers_questions .question_answer{
+        width:80%;
+    }
+    .open_text.open {
+        width: 100%;
     }
 }

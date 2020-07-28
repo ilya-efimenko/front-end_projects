@@ -765,21 +765,12 @@ main {
     background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
     padding-top: 146px;
     overflow: hidden;
-<<<<<<< HEAD
 }
 .customers_quotes_left {
     display:flex;
     align-items: flex-start;
     flex-direction: column;
 }
-=======
-}
-.customers_quotes_left {
-    display:flex;
-    align-items: flex-start;
-    flex-direction: column;
-}
->>>>>>> 302a0920f5581c9ad3d1262095b46b0d113bbc58
 .customers_quotes_left .testimonials {
     font-family: Roboto;
     font-size: 10px;
@@ -858,11 +849,7 @@ main {
     display:flex;
     flex-direction: column;
     align-items: center;
-<<<<<<< HEAD
     min-height: 700px;
-=======
-    min-height: 964px;
->>>>>>> 302a0920f5581c9ad3d1262095b46b0d113bbc58
     background: #ffffff;
     padding-top: 146px;
 }
@@ -935,7 +922,6 @@ main {
     line-height: 27px;
     letter-spacing: 0.03em;
     color: #8D96BD;
-<<<<<<< HEAD
 }
 .get_started_now {
     display: flex;
@@ -1052,8 +1038,6 @@ footer.footer {
     justify-content: space-around;
     align-items: center;
     border-top: 1px solid #D8E3FE;
-=======
->>>>>>> 302a0920f5581c9ad3d1262095b46b0d113bbc58
 }
 @media(max-width:1024px) {
     #burger_container { 
@@ -1078,15 +1062,12 @@ footer.footer {
         padding-top: 10%;
         padding-bottom: 10%;
     }
-<<<<<<< HEAD
     .increasing_productivity .first_block_text {
         width: 100%;
     }
     .plan_manage .third_block_text {
         width: 100%;
     } 
-=======
->>>>>>> 302a0920f5581c9ad3d1262095b46b0d113bbc58
     .brands .img_bitbucket {
         display: none;
     }
@@ -1203,7 +1184,6 @@ footer.footer {
     .open_text.open {
         width: 100%;
     }
-<<<<<<< HEAD
     .get_started_now .get_started_now_text {
         width: 100%;
     }
@@ -1230,6 +1210,4 @@ footer.footer {
     footer.footer .icons{
         padding-left: 0;
     }
-=======
->>>>>>> 302a0920f5581c9ad3d1262095b46b0d113bbc58
 }

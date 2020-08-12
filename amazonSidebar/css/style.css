@@ -1,0 +1,126 @@
+@font-face {
+    font-family: Arial; 
+    src: url(../fonts/arial.ttf); 
+}
+.top_nav_burger {
+    min-height: 60px;
+    background-color: #131921;
+}
+#burger_link {
+    float: left;
+    margin: 10px 7px 10px 7px;
+    width: 36px;
+    height: 38px;
+    color: #fff;
+    border-radius: 3px;
+    border: 1px solid #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+#burger_link:hover {
+    border: 1px solid #fff;
+}
+#burger_link li {
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+}
+#burger_link li:first-child {
+    margin-top: 10px;
+}
+#burger_link li {
+    margin-top: 6px;
+}
+#burgerlink.hide {
+    display: none;
+}
+.sidebar_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.8);
+    font-family: Arial, sans-serif;
+    display: none;
+}
+.sidebar_bg.open {
+    display: block;
+}
+.sidebar_bg #close_btn {
+    position: fixed;
+    background-position: -190px -288px;
+    left: 380px;
+    top: 20px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized_layout1._CB468670774_.png);
+}
+.sidebar_bg.hide {
+    display: none;
+}
+.sidebar_content {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 365px;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    background-color: #fff;
+    height: 100%;
+    box-shadow: 4px 0 10px 0 rgba(0,0,0,.4);
+    transition: left .5s ease;
+}
+.sidebar_content.open {
+    left: 0;
+}
+.sidebar_content .hmenu-customer-profile {
+    position: fixed;
+    width: 365px;
+    background-color: #232f3e;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    z-index: 3;
+}
+.sidebar_content .hmenu-customer-profile a {
+    text-decoration: none;
+    font-size: 19px;
+    line-height: 25px;
+    color: #fff;
+    overflow: hidden;
+    padding: 13px 20px 13px 36px;
+}
+.sidebar_content .hmenu-content {
+    position: relative;
+    overflow-x: hidden;
+}
+.sidebar_content .hmenu-content li {
+    display: flex;
+}
+.sidebar_content .hmenu-content li a:hover {
+    background-color: #eaeded;
+}
+.sidebar_content .hmenu-content li a{
+    text-decoration: none;
+    color: #000;
+    padding: 13px 20px 13px 36px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.sidebar_content .hmenu-content li a i{
+    margin-left: auto;
+    width: 10px;
+    height: 14px;
+    background-position: -166px -288px;
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized_layout1._CB468670774_.png);
+}
+.sidebar_content .hmenu-content li:first-child {
+    
+    padding: 70px 20px 13px 36px;
+    color: #969397;
+}

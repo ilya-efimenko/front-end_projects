@@ -44,10 +44,13 @@
     bottom: 0;
     background-color: rgba(0,0,0,.8);
     font-family: Arial, sans-serif;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
 }
 .sidebar_bg.open {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 .sidebar_bg #close_btn {
     position: fixed;
@@ -60,7 +63,7 @@
     background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized_layout1._CB468670774_.png);
 }
 .sidebar_bg.hide {
-    display: none;
+    visibility: hidden;
 }
 .sidebar_content {
     position: fixed;
@@ -73,7 +76,7 @@
     background-color: #fff;
     height: 100%;
     box-shadow: 4px 0 10px 0 rgba(0,0,0,.4);
-    transition: left .5s ease;
+    transition: left .4s ease;
 }
 .sidebar_content.open {
     left: 0;
@@ -120,7 +123,6 @@
     background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized_layout1._CB468670774_.png);
 }
 .sidebar_content .hmenu-content li:first-child {
-    
     padding: 70px 20px 13px 36px;
     color: #969397;
 }

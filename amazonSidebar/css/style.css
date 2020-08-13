@@ -2,6 +2,10 @@
     font-family: Arial; 
     src: url(../fonts/arial.ttf); 
 }
+@font-face {
+    font-family: 'Amazon Ember';
+    src: url(../fonts/amazonEmber.ttf);
+}
 .top_nav_burger {
     min-height: 60px;
     background-color: #131921;
@@ -43,7 +47,6 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,.8);
-    font-family: Arial, sans-serif;
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s ease;
@@ -77,6 +80,8 @@
     height: 100%;
     box-shadow: 4px 0 10px 0 rgba(0,0,0,.4);
     transition: left .4s ease;
+    font-family: 'Amazon Ember', Arial, sans-serif;
+    overflow-y: scroll;
 }
 .sidebar_content.open {
     left: 0;
@@ -87,42 +92,78 @@
     background-color: #232f3e;
     height: 50px;
     display: flex;
+    align-items: center;
     cursor: pointer;
     z-index: 3;
 }
-.sidebar_content .hmenu-customer-profile a {
+.sidebar_content .hmenu-customer-profile .avatar_icon {
+    margin: 0 10px 0 36px;
+    background-position: -137px -340px;
+    height: 25px;
+    width: 27px;
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized_layout1._CB468670774_.png);
+}
+.sidebar_content .hmenu-customer-profile .link_sign_in a {
     text-decoration: none;
     font-size: 19px;
     line-height: 25px;
     color: #fff;
     overflow: hidden;
-    padding: 13px 20px 13px 36px;
 }
 .sidebar_content .hmenu-content {
     position: relative;
     overflow-x: hidden;
-}
-.sidebar_content .hmenu-content li {
-    display: flex;
-}
-.sidebar_content .hmenu-content li a:hover {
-    background-color: #eaeded;
+    padding: 70px 0 25px 0;
 }
 .sidebar_content .hmenu-content li a{
     text-decoration: none;
     color: #000;
-    padding: 13px 20px 13px 36px;
+    padding: 15px 20px 13px 36px;
     font-size: 14px;
     line-height: 16px;
+    display: flex;
 }
-.sidebar_content .hmenu-content li a i{
+.sidebar_content .hmenu-content li a:hover,
+.sidebar_content .hmenu-content li a:visited{
+    background-color: #eaeded;
+}
+.sidebar_content .hmenu-content li a i.arrow_icon{
     margin-left: auto;
     width: 10px;
     height: 14px;
     background-position: -166px -288px;
     background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized_layout1._CB468670774_.png);
 }
+/* .sidebar_content .hmenu-content li a i.arrow_icon:hover{
+    color: #fff;
+} */
+.sidebar_content .hmenu-content li a i.language_icon{
+    background-position: -77px -51px;
+    width: 15px;
+    height: 15px;
+    background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/InternationalCustomerPreferencesNavAssets-icp_sprite-0b528ccc99b2eed18447291de6df851bc2c6fe68._V2_.png);
+    margin: 0 11px 0 0;
+}
+.sidebar_content .hmenu-content li a i.country_icon{
+    background-position: -54px -108px;
+    width: 18px;
+    height: 12px;
+    background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/InternationalCustomerPreferencesNavAssets-icp_sprite-0b528ccc99b2eed18447291de6df851bc2c6fe68._V2_.png);
+    margin: 2px 11px 0 0;
+}
 .sidebar_content .hmenu-content li:first-child {
-    padding: 70px 20px 13px 36px;
     color: #969397;
+    font-size: 14px;
+    padding: 5px 20px 13px 36px;
+}
+
+.sidebar_content .hmenu-content li.help-settings {
+    padding: 13px 20px 13px 36px;
+    color: #969397;
+    font-size: 14px;
+}
+.sidebar_content .hmenu-content li.line {
+    border-bottom: 1px solid #d5dbdb;
+    padding: 2px 0 0 0;
+    margin: 0;
 }
